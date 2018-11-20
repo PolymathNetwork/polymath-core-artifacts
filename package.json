@@ -1,0 +1,15 @@
+{
+  "name": "@polymath/core-artifacts",
+  "version": "2.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "check-more-types": "^2.24.0"
+  },
+  "scripts": {
+    "test": "mocha src/**/test/*.js -R spec --recursive"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "unit.js": "^2.0.0"
+  }
+}

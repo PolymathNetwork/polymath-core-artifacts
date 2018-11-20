@@ -1,0 +1,97 @@
+{
+  "contractName": "ICheckpoint",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a723058204d7b632c3b2903e2170d9c04ff822739f1704c086dffdac9449e7850a2b1c3260029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058204d7b632c3b2903e2170d9c04ff822739f1704c086dffdac9449e7850a2b1c3260029",
+  "sourceMap": "149:28:45:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;149:28:45;;;;;;;",
+  "deployedSourceMap": "149:28:45:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\r\n\r\n/**\r\n * @title Interface to be implemented by all checkpoint modules\r\n */\r\n/*solium-disable-next-line no-empty-blocks*/\r\ninterface ICheckpoint {\r\n\r\n}\r\n",
+  "sourcePath": "/Users/polymath/polymath-core/contracts/modules/Checkpoint/ICheckpoint.sol",
+  "ast": {
+    "absolutePath": "/Users/polymath/polymath-core/contracts/modules/Checkpoint/ICheckpoint.sol",
+    "exportedSymbols": {
+      "ICheckpoint": [
+        16663
+      ]
+    },
+    "id": 16664,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 16662,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:45"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title Interface to be implemented by all checkpoint modules\r",
+        "fullyImplemented": true,
+        "id": 16663,
+        "linearizedBaseContracts": [
+          16663
+        ],
+        "name": "ICheckpoint",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 16664,
+        "src": "149:28:45"
+      }
+    ],
+    "src": "0:179:45"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/polymath/polymath-core/contracts/modules/Checkpoint/ICheckpoint.sol",
+    "exportedSymbols": {
+      "ICheckpoint": [
+        16663
+      ]
+    },
+    "id": 16664,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 16662,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:45"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title Interface to be implemented by all checkpoint modules\r",
+        "fullyImplemented": true,
+        "id": 16663,
+        "linearizedBaseContracts": [
+          16663
+        ],
+        "name": "ICheckpoint",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 16664,
+        "src": "149:28:45"
+      }
+    ],
+    "src": "0:179:45"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-11-20T13:57:45.354Z"
+}
