@@ -4,19 +4,19 @@ var artifacts = require('../index')
 describe('Getting content contract', function() {
 
   it('Existing contract', function() {
-    let result = artifacts.load('ERC20').content
+    let result = artifacts.load('ERC20').artifact()
     test.string(result).isNot('')
   })
 
   it('Not existing contract', function() {
     test.error(function (){
-      artifacts.load('ERC720').content
+      artifacts.load('ERC720').artifact()
     })
   })
 
   it('Two differents contracts', function() {
-    let erc20 = artifacts.load('ERC20').content
-    let basicToken = artifacts.load('BasicToken').content
+    let erc20 = artifacts.load('ERC20').artifact()
+    let basicToken = artifacts.load('BasicToken').artifact()
     test.string(erc20).match(/\"ERC20\"/i);
     test.string(basicToken).match(/\"BasicToken\"/i);
   })
