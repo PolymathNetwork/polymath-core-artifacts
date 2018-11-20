@@ -5,7 +5,7 @@ class Artifact {
   constructor(file) {
     this.content = file;
   }
-  artifact() {
+  json() {
     return this.content
   }
   abi() {
