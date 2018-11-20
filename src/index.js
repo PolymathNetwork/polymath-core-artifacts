@@ -18,8 +18,7 @@ function getContract (contractName) {
   let file = fs.readFileSync(`./src/contracts/${contractName}.json`).toString()
   check.verify.string(file, `Contract does not exist`)
 
-  var artifact = new Artifact(file)
-  return artifact
+  return new Artifact(file)
 }
 
 function load (contractName) {
