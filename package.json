@@ -1,5 +1,5 @@
 {
-  "name": "@polymath/polymath-core-artifacts",
+  "name": "polymath-core-artifacts",
   "version": "2.0.0",
   "description": "This package contains the JSON and TypeScript ABI files necessary to interact with the smart contracts from Polymath Network.",
   "license": "MIT",
