@@ -43,13 +43,19 @@ describe('Getting abi contract', function() {
 describe('Polymath Registry address network', function() {
 
   it('Kovan', function() {
-    let result = artifacts.registry().kovan()
+    let result = artifacts.registry().network(1)
     test.string(result).isNot('')
   })
 
   it('Mainnet', function() {
-    let result = artifacts.registry().mainnet()
+    let result = artifacts.registry().network(42)
     test.string(result).isNot('')
+  })
+
+  it('Ropsten', function() {
+    test.error(function() {
+      artifacts.registry().network(3)
+    })
   })
 
 })

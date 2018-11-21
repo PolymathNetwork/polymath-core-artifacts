@@ -14,11 +14,10 @@ class PolymathRegistry {
   constructor() {
     this.artifact = JSON.parse(getContract('PolymathRegistry').content)
   }
-  mainnet() {
-    return this.artifact.networks[1].address
-  }
-  kovan() {
-    return this.artifact.networks[42].address
+  network(id) {
+    check.equal(id, '1')
+    check.equal(id, '42')
+    return this.artifact.networks[id].address
   }
 }
 

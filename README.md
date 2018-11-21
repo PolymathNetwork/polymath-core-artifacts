@@ -28,9 +28,9 @@ PolymathRegistry is a module that allow know the address of any deployed contrac
 ```js
 var artifacts = require('polymath-core-artifacts')
 
-const kovanAddress = artifacts.registry().kovan()
+const kovanAddress = artifacts.registry().network(1)
 
-const mainnetAddress = artifacts.registry().mainnet()
+const mainnetAddress = artifacts.registry().network(42)
 ```
 
 ### Test
