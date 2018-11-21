@@ -11,7 +11,7 @@ Requires nodejs
 ## Simple example
 
 ```js
-var artifacts = require('polymath-core-artifacts')
+const artifacts = require('polymath-core-artifacts')
 
 // get TickerRegistry content
 const TickerRegistry = artifacts.load('TickerRegistry').content
@@ -26,7 +26,7 @@ We offer a way to get the last contract address of PolymathRegistry.
 PolymathRegistry is a module that allow know the address of any deployed contract from Polymath environment.
 
 ```js
-var artifacts = require('polymath-core-artifacts')
+const artifacts = require('polymath-core-artifacts')
 
 const kovanAddress = artifacts.registry().network(1)
 
