@@ -1,4 +1,5 @@
 var check = require('check-more-types')
+var path = require('path')
 var fs = require('fs')
 
 class Artifact {
@@ -23,7 +24,7 @@ class PolymathRegistry {
 
 function getContract (contractName) {
   check.verify.string(contractName, 'Missing contract')
-  let file = fs.readFileSync(`./src/contracts/${contractName}.json`).toString()
+  let file = fs.readFileSync(path.resolve(__dirname, `contracts/${contractName}.json`)).toString()
   check.verify.string(file, `Contract does not exist`)
   return new Artifact(file)
 }
