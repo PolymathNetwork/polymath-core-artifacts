@@ -11,13 +11,26 @@ Requires nodejs
 ## Simple example
 
 ```js
-var artifacts = require('polymath-core-artifacts');
+var artifacts = require('polymath-core-artifacts')
 
-// get TickerRegistry JSON
-const TickerRegistry = artifacts.load('TickerRegistry').json()
+// get TickerRegistry content
+const TickerRegistry = artifacts.load('TickerRegistry').content
 
 // get USDTieredSTO abi
 const USDTieredSTO = artifacts.load('USDTieredSTO').abi()
+```
+
+## Polymath Registry address
+
+We offer a way to get the last contract address of PolymathRegistry.
+PolymathRegistry is a module that allow know the address of any deployed contract from Polymath environment.
+
+```js
+var artifacts = require('polymath-core-artifacts')
+
+const kovanAddress = artifacts.registry().kovan()
+
+const mainnetAddress = artifacts.registry().mainnet()
 ```
 
 ### Test
