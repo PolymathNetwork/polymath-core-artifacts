@@ -1,26 +1,44 @@
 {
   "name": "polymath-core-artifacts",
   "version": "2.0.1",
-  "description": "This package contains the JSON and TypeScript ABI files necessary to interact with the smart contracts from Polymath Network.",
+  "description": "This repository contains the JSON files necessary to interact with the smart contracts from Polymath Network.",
   "license": "MIT",
   "repository": "PolymathNetwork/polymath-core-artifacts",
-  "main": "main.js",
+  "files": [
+    "lib/**/*",
+    "contracts/*.json"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "keywords": [
     "polymath",
     "artifacts",
     "json",
     "abi",
-    "npm",
-    "package"
+    "javascript",
+    "typescript"
   ],
   "scripts": {
-    "test": "mocha src/**/test/*.js -R spec --recursive"
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "check-more-types": "^2.24.0"
+    "@types/node": "^10.12.12"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "unit.js": "^2.0.0"
+    "@types/jest": "^23.3.10",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
   }
 }
