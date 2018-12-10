@@ -13,9 +13,9 @@ Requires nodejs
 ```js
 const artifacts = require('polymath-core-artifacts')
 // get TickerRegistry content
-const TickerRegistry = artifacts.Load('TickerRegistry').content
+const TickerRegistry = artifacts.load('TickerRegistry').content
 // get USDTieredSTO abi
-const USDTieredSTO = artifacts.Load('USDTieredSTO').abi()
+const USDTieredSTO = artifacts.load('USDTieredSTO').abi()
 ```
 
 ## Polymath Registry address
@@ -25,12 +25,12 @@ PolymathRegistry is a module that allow know the address of any deployed contrac
 
 ```js
 const artifacts = require('polymath-core-artifacts')
-const mainnetAddress = artifacts.Registry().network(1)
-const kovanAddress = artifacts.Registry().network(42)
+const mainnetAddress = artifacts.registry().network(1)
+const kovanAddress = artifacts.registry().network(42)
 ```
 
 ### Test
 
 ```js
-$ npm run test
+$ npm test
 ```
