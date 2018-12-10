@@ -1,6 +1,6 @@
 {
   "name": "polymath-core-artifacts",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "This repository contains the JSON files necessary to interact with the smart contracts from Polymath Network.",
   "license": "MIT",
   "repository": "PolymathNetwork/polymath-core-artifacts",

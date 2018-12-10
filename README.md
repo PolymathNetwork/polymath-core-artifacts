@@ -2,6 +2,8 @@
 
 This repository contains the JSON files necessary to interact with the smart contracts from Polymath Network. This is a pure JavaScript implementation with TypeScript support for node.js and the browser.
 
+## Contracts version - 2.0
+
 ## Install
 
 Requires nodejs
