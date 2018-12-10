@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6","dom"],
+    "declaration": true,
+    "outDir": "./lib",
+    "rootDir": "src", 
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "allowJs": true,
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/tests/*"]
+}
