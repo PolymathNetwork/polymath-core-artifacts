@@ -1,38 +1,59 @@
-# Polymath Core Artifacts
+## @polymath-core-artifacts
 
-This repository contains the JSON files necessary to interact with the smart contracts from Polymath Network. This is a pure JavaScript implementation with TypeScript support for node.js and the browser.
+Smart contract compilation artifacts for Polymath v2.1.0.
 
-## Contracts version - 2.0
+## Installation
 
-## Install
-
-Requires nodejs
-
-    npm install polymath-core-artifacts
-
-## Simple example
-
-```js
-const artifacts = require('polymath-core-artifacts')
-// get TickerRegistry content
-const TickerRegistry = artifacts.load('TickerRegistry').content
-// get USDTieredSTO abi
-const USDTieredSTO = artifacts.load('USDTieredSTO').abi()
+```bash
+yarn add polymath-core-artifacts
 ```
 
-## Polymath Registry address
+**Import**
 
-We offer a way to get the last contract address of PolymathRegistry.
-PolymathRegistry is a module that allow know the address of any deployed contract from Polymath environment.
-
-```js
-const artifacts = require('polymath-core-artifacts')
-const mainnetAddress = artifacts.registry().network(1)
-const kovanAddress = artifacts.registry().network(42)
+```typescript
+import * as artifacts from 'polymath-core-artifacts';
 ```
 
-### Test
+or
 
-```js
-$ npm test
+```javascript
+var artifacts = require('polymath-core-artifacts');
+```
+
+## Contributing
+
+We welcome improvements and fixes from the wider community! To report bugs within this package, please create an issue in this repository.
+
+### Install dependencies
+
+If you don't have yarn workspaces enabled (Yarn < v1.0) - enable them:
+
+```bash
+yarn config set workspaces-experimental true
+```
+
+Then install dependencies
+
+```bash
+yarn install
+```
+
+### Build
+
+To build this package run the following from root directory:
+
+```bash
+yarn build
+```
+
+### Clean
+
+```bash
+yarn clean
+```
+
+### Lint
+
+```bash
+yarn lint
 ```
